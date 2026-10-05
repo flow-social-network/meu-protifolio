@@ -54,10 +54,9 @@ export const AdminPages: React.FC = () => {
   };
 
   const handleDelete = async (id: string, title: string) => {
-    if (!window.confirm(`Deseja realmente excluir a página "${title}"?`)) return;
     try {
       await api.pages.delete(id);
-      toast.success('Página excluída.');
+      toast.success(`Página "${title}" excluída.`);
       loadPages();
     } catch (err: any) {
       toast.error('Erro ao excluir página.');

@@ -9,17 +9,18 @@ export const AdminSettings: React.FC = () => {
   const toast = useToast();
   const { refreshSettings } = useSite();
   const [settings, setSettings] = useState<SiteSettingsDTO>({
-    siteName: 'DEEVO Soluções Financeiras & NoteAgents',
-    tagline: 'Transformando ideias em soluções digitais reais.',
-    siteUrl: 'https://deevo.com.br',
-    contactEmail: 'vini@deevo.com.br',
-    contactPhone: '+55 (11) 99999-9999',
-    address: 'Brasil',
+    siteName: 'DEEVO Soluções Financeiras LTDA',
+    tagline: 'Crédito com segurança, para um futuro melhor.',
+    siteUrl: 'https://deevofinanceiras.com.br',
+    contactEmail: 'contato@deevofinanceiras.com.br',
+    contactPhone: '(51) 3786-6302',
+    cnpj: '63.187.175/0001-70',
+    address: 'Brasil — Atendimento Nacional',
     language: 'pt-BR',
     timezone: 'America/Sao_Paulo (GMT-3)',
     githubUrl: 'https://github.com/deevo-solucoes',
     linkedinUrl: 'https://linkedin.com/in/viniamaral',
-    whatsappNumber: '5511999999999'
+    whatsappNumber: '555137866302'
   });
   const [isSaving, setIsSaving] = useState(false);
 
@@ -81,6 +82,17 @@ export const AdminSettings: React.FC = () => {
               value={settings.tagline}
               onChange={(e) => setSettings({ ...settings, tagline: e.target.value })}
               className="w-full p-2.5 text-xs rounded-xl border border-slate-300 focus:border-blue-600 focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label className="block text-xs font-bold text-slate-700 mb-1">CNPJ da Empresa</label>
+            <input
+              type="text"
+              value={settings.cnpj || ''}
+              onChange={(e) => setSettings({ ...settings, cnpj: e.target.value })}
+              placeholder="00.000.000/0000-00"
+              className="w-full p-2.5 text-xs rounded-xl border border-slate-300 focus:border-blue-600 focus:outline-none font-mono"
             />
           </div>
 

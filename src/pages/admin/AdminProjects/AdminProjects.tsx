@@ -56,10 +56,9 @@ export const AdminProjects: React.FC = () => {
   };
 
   const handleDelete = async (id: string, name: string) => {
-    if (!window.confirm(`Excluir o projeto "${name}"?`)) return;
     try {
       await api.projects.delete(id);
-      toast.success('Projeto excluído.');
+      toast.success(`Projeto "${name}" excluído.`);
       loadProjects();
     } catch {
       toast.error('Erro ao excluir projeto.');

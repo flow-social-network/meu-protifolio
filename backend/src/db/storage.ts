@@ -46,7 +46,15 @@ const getDefaultState = (): DatabaseState => ({
       role: 'ADMIN',
       avatarUrl: '/icon.svg',
       createdAt: new Date().toISOString(),
-      // Simple sha256 of "admin123"
+      passwordHash: crypto.createHash('sha256').update('admin123').digest('hex')
+    },
+    {
+      id: 'usr_admin_2',
+      name: 'Administrador DEEVO',
+      email: 'contato@deevofinanceiras.com.br',
+      role: 'ADMIN',
+      avatarUrl: '/icon.svg',
+      createdAt: new Date().toISOString(),
       passwordHash: crypto.createHash('sha256').update('admin123').digest('hex')
     }
   ],
@@ -142,17 +150,18 @@ const getDefaultState = (): DatabaseState => ({
     autoSitemap: true
   },
   siteSettings: {
-    siteName: 'DEEVO Soluções Financeiras & NoteAgents',
-    tagline: 'Transformando ideias em soluções digitais reais.',
-    siteUrl: 'https://deevo.com.br',
-    contactEmail: 'vini@deevo.com.br',
-    contactPhone: '+55 (11) 99999-9999',
-    address: 'Brasil',
+    siteName: 'DEEVO Soluções Financeiras LTDA',
+    tagline: 'Crédito com segurança, para um futuro melhor.',
+    siteUrl: 'https://deevofinanceiras.com.br',
+    contactEmail: 'contato@deevofinanceiras.com.br',
+    contactPhone: '(51) 3786-6302',
+    cnpj: '63.187.175/0001-70',
+    address: 'Brasil — Atendimento Nacional',
     language: 'pt-BR',
     timezone: 'America/Sao_Paulo (GMT-3)',
     githubUrl: 'https://github.com/deevo-solucoes',
     linkedinUrl: 'https://linkedin.com/in/viniamaral',
-    whatsappNumber: '5511999999999'
+    whatsappNumber: '555137866302'
   },
   auditLogs: [
     {

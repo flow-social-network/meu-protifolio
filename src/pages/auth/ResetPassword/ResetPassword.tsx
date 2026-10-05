@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, ArrowLeft, Send, CheckCircle2, ShieldCheck, Clock, Lock } from 'lucide-react';
+import { DeevoLogo } from '../../../components/shared/DeevoLogo/DeevoLogo';
 import { api } from '../../../services/api';
 import { usePageSEO } from '../../../context/SiteContext';
 import { useToast } from '../../../context/ToastContext';
@@ -47,16 +48,8 @@ export const ResetPassword: React.FC<ResetPasswordProps> = ({ onNavigate }) => {
         <div className="md:col-span-7 p-8 sm:p-12 flex flex-col justify-between">
           <div>
             {/* Logo */}
-            <div className="flex items-center gap-2.5 mb-8">
-              <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center p-1.5 shadow-sm">
-                <svg viewBox="0 0 100 100" fill="none" className="w-full h-full">
-                  <polygon points="50,8 88,30 88,70 50,92 12,70 12,30" fill="#FFFFFF" opacity="0.9" />
-                  <path d="M50 16 L80 34 L50 52 L20 34 Z" fill="#0B5FFF" />
-                  <path d="M20 38 L50 56 L50 84 L20 66 Z" fill="#043299" />
-                  <path d="M80 38 L80 66 L50 84 L50 56 Z" fill="#00A3FF" />
-                </svg>
-              </div>
-              <span className="font-extrabold text-xl tracking-tight text-slate-900">DEEVO</span>
+            <div className="mb-8">
+              <DeevoLogo variant="horizontal" size="md" />
             </div>
 
             <h1 className="text-2xl font-black text-slate-900 tracking-tight">Recuperar sua senha</h1>

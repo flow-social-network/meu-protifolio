@@ -33,8 +33,14 @@ export const LegalPage: React.FC<LegalPageProps> = ({ type }) => {
       </div>
 
       <div className="p-8 rounded-3xl bg-white border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm text-slate-700 leading-relaxed">
+        <div className="p-4 rounded-2xl bg-blue-50/60 border border-blue-100 text-xs text-slate-800 space-y-1">
+          <p className="font-bold text-slate-900">DEEVO Soluções Financeiras LTDA</p>
+          <p className="font-mono text-slate-600">CNPJ: 63.187.175/0001-70</p>
+          <p className="text-slate-600">Telefone: (51) 3786-6302 | E-mail: contato@deevofinanceiras.com.br</p>
+        </div>
+
         <p>
-          A <strong>DEEVO Soluções Financeiras</strong> e o projeto <strong>NoteAgents</strong> têm o compromisso de proteger a privacidade e os dados pessoais de seus usuários e clientes, em total conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
+          A <strong>DEEVO Soluções Financeiras LTDA</strong> e a plataforma <strong>NoteAgents</strong> têm o compromisso de proteger a privacidade e os dados pessoais de seus usuários e clientes, em total conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
         </p>
 
         <h2 className="text-base font-bold text-slate-900 pt-2">1. Coleta e Finalidade de Dados</h2>
@@ -49,7 +55,7 @@ export const LegalPage: React.FC<LegalPageProps> = ({ type }) => {
 
         <h2 className="text-base font-bold text-slate-900 pt-2">3. Direitos do Titular</h2>
         <p>
-          Você tem o direito de solicitar acesso, correção ou eliminação de seus dados a qualquer momento pelo e-mail <strong>contato@deevo.com.br</strong>.
+          Você tem o direito de solicitar acesso, correção ou eliminação de seus dados a qualquer momento pelo e-mail <strong>contato@deevofinanceiras.com.br</strong> ou pelo telefone <strong>(51) 3786-6302</strong>.
         </p>
       </div>
     </div>

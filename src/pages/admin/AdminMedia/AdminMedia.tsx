@@ -53,10 +53,9 @@ export const AdminMedia: React.FC = () => {
   };
 
   const handleDelete = async (id: string, name: string) => {
-    if (!window.confirm(`Deseja remover "${name}" da biblioteca?`)) return;
     try {
       await api.media.delete(id);
-      toast.success('Arquivo excluído com sucesso.');
+      toast.success(`Arquivo "${name}" excluído.`);
       loadMedia();
     } catch {
       toast.error('Erro ao excluir mídia.');

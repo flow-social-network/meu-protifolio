@@ -18,8 +18,10 @@ import {
   LogOut,
   ChevronLeft,
   ChevronRight,
-  ExternalLink
+  ExternalLink,
+  Sparkles
 } from 'lucide-react';
+import { DeevoLogo } from '../../shared/DeevoLogo/DeevoLogo';
 import { useAuth } from '../../../context/AuthContext';
 
 interface AdminSidebarProps {
@@ -65,8 +67,9 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({
       ]
     },
     {
-      title: 'Configurações',
+      title: 'Configurações & Marca',
       items: [
+        { label: 'Media Kit & Identidade', path: '/media-kit', icon: Sparkles },
         { label: 'Integrações', path: '/admin/integrations', icon: Plug },
         { label: 'SEO e Metadados', path: '/admin/seo', icon: Search },
         { label: 'Configurações', path: '/admin/settings', icon: Settings },
@@ -86,21 +89,10 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({
       {/* Brand Header */}
       <div className="h-16 px-4 flex items-center justify-between border-b border-slate-800">
         <div className="flex items-center gap-3 overflow-hidden">
-          <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center p-1.5 shrink-0 shadow-sm">
-            <svg viewBox="0 0 100 100" fill="none" className="w-full h-full">
-              <polygon points="50,8 88,30 88,70 50,92 12,70 12,30" fill="#FFFFFF" opacity="0.9" />
-              <path d="M50 16 L80 34 L50 52 L20 34 Z" fill="#0B5FFF" />
-              <path d="M20 38 L50 56 L50 84 L20 66 Z" fill="#043299" />
-              <path d="M80 38 L80 66 L50 84 L50 56 Z" fill="#00A3FF" />
-            </svg>
-          </div>
-          {!isCollapsed && (
-            <div className="truncate">
-              <span className="font-extrabold text-base tracking-tight text-white block">DEEVO</span>
-              <span className="text-[10px] uppercase font-bold tracking-widest text-blue-400 block -mt-1">
-                Painel CMS
-              </span>
-            </div>
+          {isCollapsed ? (
+            <DeevoLogo variant="icon" size="sm" />
+          ) : (
+            <DeevoLogo variant="white" size="sm" />
           )}
         </div>
 

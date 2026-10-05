@@ -40,7 +40,6 @@ export const AdminIntegrations: React.FC = () => {
   };
 
   const handleDisconnect = async (id: string, name: string) => {
-    if (!window.confirm(`Deseja desconectar a integração "${name}"?`)) return;
     try {
       await api.integrations.disconnect(id);
       toast.success(`Integração "${name}" desconectada.`);

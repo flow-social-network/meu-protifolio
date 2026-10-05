@@ -1,12 +1,16 @@
 import React from 'react';
 import { Download, Sparkles, Target, Compass, Award, Shield, CheckCircle2, ArrowRight } from 'lucide-react';
 import { usePageSEO } from '../../../context/SiteContext';
+import { useToast } from '../../../context/ToastContext';
+import { FounderAvatar } from '../../../components/shared/FounderAvatar/FounderAvatar';
 
 interface AboutProps {
   onNavigate: (path: string) => void;
 }
 
 export const About: React.FC<AboutProps> = ({ onNavigate }) => {
+  const toast = useToast();
+
   usePageSEO({
     title: 'Sobre Mim — Vini Amaral & DEEVO',
     description: 'Minha história, valores e visão sobre engenharia de software e inteligência artificial.',
@@ -45,7 +49,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
               href="/curriculo-vini-amaral.pdf"
               onClick={(e) => {
                 e.preventDefault();
-                alert('Currículo disponível para consulta e download.');
+                toast.info('Currículo de Vini Amaral disponível para consulta e download.');
               }}
               className="px-5 py-3 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold text-xs transition flex items-center gap-2"
             >
@@ -56,14 +60,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
         </div>
 
         <div className="lg:col-span-6 flex justify-center">
-          <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-3xl p-3 bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-500 shadow-2xl">
-            <div className="w-full h-full rounded-2xl bg-slate-900 flex flex-col items-center justify-center p-6 text-center text-white relative overflow-hidden">
-              <img src="/icon.svg" alt="Vini Amaral" className="w-28 h-28 object-contain mb-4 opacity-90" />
-              <h2 className="text-lg font-bold">Vini Amaral</h2>
-              <p className="text-xs text-blue-300">Fundador DEEVO & NoteAgents</p>
-              <p className="text-[11px] text-slate-400 mt-2">+10 anos de experiência em engenharia de software</p>
-            </div>
-          </div>
+          <FounderAvatar size="xl" />
         </div>
       </div>
 

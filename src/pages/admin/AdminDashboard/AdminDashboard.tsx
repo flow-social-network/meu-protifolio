@@ -174,7 +174,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onNavigate }) =>
               Gerenciar Páginas
             </button>
             <button
-              onClick={() => window.open('/', '_blank')}
+              onClick={() => onNavigate('/')}
               className="px-4 py-2.5 rounded-xl border border-white/30 hover:bg-white/10 text-white font-semibold text-xs transition flex items-center gap-1.5"
             >
               Ver Site

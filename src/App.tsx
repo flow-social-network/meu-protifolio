@@ -16,6 +16,7 @@ import { Solutions } from './pages/public/Solutions/Solutions';
 import { Resources } from './pages/public/Resources/Resources';
 import { Blog } from './pages/public/Blog/Blog';
 import { Contact } from './pages/public/Contact/Contact';
+import { MediaKit } from './pages/public/MediaKit/MediaKit';
 import { Appointments } from './pages/public/Appointments/Appointments';
 import { OpenSource } from './pages/public/OpenSource/OpenSource';
 import { Community } from './pages/public/Community/Community';
@@ -163,6 +164,8 @@ function AppContent() {
     publicPageContent = <Blog onNavigate={navigate} selectedSlug={slug} />;
   } else if (currentPath === '/contato') {
     publicPageContent = <Contact onNavigate={navigate} />;
+  } else if (currentPath === '/media-kit') {
+    publicPageContent = <MediaKit />;
   } else if (currentPath === '/atendimento') {
     publicPageContent = <Appointments onNavigate={navigate} />;
   } else if (currentPath === '/open-source') {

@@ -53,10 +53,9 @@ export const AdminPosts: React.FC = () => {
   };
 
   const handleDelete = async (id: string, title: string) => {
-    if (!window.confirm(`Deseja realmente excluir o artigo "${title}"?`)) return;
     try {
       await api.posts.delete(id);
-      toast.success('Post removido.');
+      toast.success(`Post "${title}" removido com sucesso.`);
       loadPosts();
     } catch {
       toast.error('Erro ao excluir post.');

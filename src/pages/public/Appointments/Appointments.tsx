@@ -500,22 +500,19 @@ export const Appointments: React.FC<AppointmentsProps> = ({ onNavigate }) => {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-            <button
-              onClick={() => {
-                const title = encodeURIComponent(`Atendimento DEEVO - ${formData.name}`);
-                const details = encodeURIComponent(
-                  `Atendimento agendado com Vini Amaral / DEEVO Soluções Financeiras.`
-                );
-                window.open(
-                  `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}`,
-                  '_blank'
-                );
-              }}
+            <a
+              href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
+                `Atendimento DEEVO - ${formData.name}`
+              )}&details=${encodeURIComponent(
+                `Atendimento agendado com Vini Amaral / DEEVO Soluções Financeiras LTDA.`
+              )}`}
+              target="_blank"
+              rel="noreferrer"
               className="w-full sm:w-auto px-5 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold text-xs flex items-center justify-center gap-2"
             >
               <CalendarCheck className="w-4 h-4 text-blue-600" />
               Adicionar ao Google Agenda
-            </button>
+            </a>
             <button
               onClick={() => onNavigate('/')}
               className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs shadow-sm"

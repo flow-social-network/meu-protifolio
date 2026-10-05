@@ -65,10 +65,9 @@ export const AdminBanners: React.FC = () => {
   };
 
   const handleDelete = async (id: string, title: string) => {
-    if (!window.confirm(`Excluir o banner "${title}"?`)) return;
     try {
       await api.banners.delete(id);
-      toast.success('Banner excluído.');
+      toast.success(`Banner "${title}" excluído com sucesso.`);
       loadBanners();
     } catch {
       toast.error('Erro ao excluir banner.');

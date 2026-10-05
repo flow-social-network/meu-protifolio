@@ -62,15 +62,14 @@ export const Contact: React.FC<ContactProps> = ({ onNavigate }) => {
               <Phone className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-xs text-slate-400 font-semibold block">WhatsApp</span>
+              <span className="text-xs text-slate-400 font-semibold block">Telefone & WhatsApp</span>
               <a
-                href="https://wa.me/5511999999999"
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm font-bold text-slate-900 hover:text-blue-600 transition"
+                href="tel:+555137866302"
+                className="text-sm font-bold text-slate-900 hover:text-blue-600 transition block"
               >
-                +55 (11) 99999-9999
+                (51) 3786-6302
               </a>
+              <span className="text-[10px] text-slate-500">Atendimento de Seg. a Sex.</span>
             </div>
           </div>
 
@@ -79,12 +78,12 @@ export const Contact: React.FC<ContactProps> = ({ onNavigate }) => {
               <Mail className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-xs text-slate-400 font-semibold block">E-mail</span>
+              <span className="text-xs text-slate-400 font-semibold block">E-mail Oficial</span>
               <a
-                href="mailto:vini@deevo.com.br"
+                href="mailto:contato@deevofinanceiras.com.br"
                 className="text-sm font-bold text-slate-900 hover:text-blue-600 transition"
               >
-                vini@deevo.com.br
+                contato@deevofinanceiras.com.br
               </a>
             </div>
           </div>
@@ -94,8 +93,9 @@ export const Contact: React.FC<ContactProps> = ({ onNavigate }) => {
               <MapPin className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-xs text-slate-400 font-semibold block">Localização</span>
-              <span className="text-sm font-bold text-slate-900">Brasil (Atendimento Remoto)</span>
+              <span className="text-xs text-slate-400 font-semibold block">Dados Corporativos</span>
+              <span className="text-sm font-bold text-slate-900 block">DEEVO Soluções Financeiras LTDA</span>
+              <span className="text-xs text-slate-600 block mt-0.5 font-mono">CNPJ: 63.187.175/0001-70</span>
             </div>
           </div>
 

@@ -8,6 +8,15 @@
       "avatarUrl": "/icon.svg",
       "createdAt": "2026-10-05T17:34:29.120Z",
       "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
+    },
+    {
+      "id": "usr_admin_2",
+      "name": "Administrador DEEVO",
+      "email": "contato@deevofinanceiras.com.br",
+      "role": "ADMIN",
+      "avatarUrl": "/icon.svg",
+      "createdAt": "2026-10-05T17:34:29.120Z",
+      "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
     }
   ],
   "pages": [
@@ -156,19 +165,30 @@
     "autoSitemap": true
   },
   "siteSettings": {
-    "siteName": "DEEVO Soluções Financeiras & NoteAgents",
-    "tagline": "Transformando ideias em soluções digitais reais.",
-    "siteUrl": "https://deevo.com.br",
-    "contactEmail": "vini@deevo.com.br",
-    "contactPhone": "+55 (11) 99999-9999",
-    "address": "Brasil",
+    "siteName": "DEEVO Soluções Financeiras LTDA",
+    "tagline": "Crédito com segurança, para um futuro melhor.",
+    "siteUrl": "https://deevofinanceiras.com.br",
+    "contactEmail": "contato@deevofinanceiras.com.br",
+    "contactPhone": "(51) 3786-6302",
+    "cnpj": "63.187.175/0001-70",
+    "address": "Brasil — Atendimento Nacional",
     "language": "pt-BR",
     "timezone": "America/Sao_Paulo (GMT-3)",
     "githubUrl": "https://github.com/deevo-solucoes",
     "linkedinUrl": "https://linkedin.com/in/viniamaral",
-    "whatsappNumber": "5511999999999"
+    "whatsappNumber": "555137866302"
   },
   "auditLogs": [
+    {
+      "id": "aud_1791222473754_9ujlg",
+      "action": "AUTH_SUCCESS",
+      "resource": "USER",
+      "details": "Login realizado com sucesso por Administrador DEEVO",
+      "userId": "usr_admin_2",
+      "userName": "Administrador DEEVO",
+      "ip": "127.0.0.1",
+      "timestamp": "2026-10-05T17:47:53.754Z"
+    },
     {
       "id": "aud_1791221683465_aii1y",
       "action": "PAGE_CREATED",

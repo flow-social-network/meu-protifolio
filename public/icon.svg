@@ -1,17 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
   <defs>
-    <linearGradient id="deevoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Background Squircle Gradient matching icobevini.png -->
+    <linearGradient id="deevoBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00A3FF" />
-      <stop offset="100%" stop-color="#0B5FFF" />
+      <stop offset="35%" stop-color="#0B5FFF" />
+      <stop offset="100%" stop-color="#022B99" />
     </linearGradient>
-    <linearGradient id="deevoDark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B5FFF" />
-      <stop offset="100%" stop-color="#043299" />
+
+    <!-- Facet 1: Left Vertical Bar (Cyan to Blue) -->
+    <linearGradient id="facetLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="50%" stop-color="#0099FF" />
+      <stop offset="100%" stop-color="#0055FF" />
     </linearGradient>
+
+    <!-- Facet 2: Top Diagonal Fold (Bright Cyan / Light Blue highlight) -->
+    <linearGradient id="facetTop" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#E0FBFF" />
+      <stop offset="25%" stop-color="#38E1FF" />
+      <stop offset="100%" stop-color="#0077FF" />
+    </linearGradient>
+
+    <!-- Facet 3: Right Curved / Folded Cap (Deep Royal Blue) -->
+    <linearGradient id="facetRight" x1="0%" y1="30%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0077FF" />
+      <stop offset="60%" stop-color="#0044EE" />
+      <stop offset="100%" stop-color="#001F80" />
+    </linearGradient>
+
+    <!-- Facet 4: Bottom Upward Fold (Cyan Reflection) -->
+    <linearGradient id="facetBottom" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0055FF" />
+      <stop offset="60%" stop-color="#00B4FF" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+
+    <!-- Subtle Inner Shadow -->
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#001855" flood-opacity="0.35" />
+    </filter>
   </defs>
-  <!-- Modern Geometric Diamond / Delta Brand Mark -->
-  <polygon points="50,8 88,30 88,70 50,92 12,70 12,30" fill="#F0F6FF" stroke="#0B5FFF" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M50 16 L80 34 L50 52 L20 34 Z" fill="url(#deevoGrad)" />
-  <path d="M20 38 L50 56 L50 84 L20 66 Z" fill="url(#deevoDark)" />
-  <path d="M80 38 L80 66 L50 84 L50 56 Z" fill="#00A3FF" />
+
+  <!-- Squircle Base Container matching iOS / App Store standards -->
+  <rect width="512" height="512" rx="115" fill="url(#deevoBgGrad)" />
+
+  <!-- 3D Faceted Origami "D" Icon Group -->
+  <g filter="url(#subtleGlow)" transform="translate(10, 0)">
+    <!-- Facet 1: Left Spine / Vertical Leg -->
+    <path d="M 120 106 L 210 170 L 210 380 L 120 406 Z" fill="url(#facetLeft)" />
+
+    <!-- Facet 2: Top Diagonal Wing -->
+    <path d="M 120 106 L 310 106 L 400 236 L 210 170 Z" fill="url(#facetTop)" />
+
+    <!-- Facet 3: Outer Right Point / Apex -->
+    <path d="M 400 236 L 416 270 L 320 406 L 210 380 L 366 268 Z" fill="url(#facetRight)" />
+
+    <!-- Facet 4: Bottom Fold connecting to Left Leg -->
+    <path d="M 120 406 L 210 380 L 320 406 L 230 406 Z" fill="url(#facetBottom)" />
+
+    <!-- White Triangle Cutout (Forward / Advance Symbol) -->
+    <polygon points="210,170 366,268 210,380" fill="#FFFFFF" />
+  </g>
 </svg>

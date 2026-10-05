@@ -22,6 +22,8 @@ import {
 import { ProjectDTO, PostDTO, BannerDTO } from '@/contracts/index';
 import { api } from '../../../services/api';
 import { usePageSEO } from '../../../context/SiteContext';
+import { FounderAvatar } from '../../../components/shared/FounderAvatar/FounderAvatar';
+import { DeevoLogo } from '../../../components/shared/DeevoLogo/DeevoLogo';
 
 interface HomeProps {
   onNavigate: (path: string) => void;
@@ -171,19 +173,9 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
             {/* Right Column: Founder Card & Metric Badges */}
             <div className="lg:col-span-6 flex flex-col items-center">
               <div className="relative w-full max-w-md">
-                {/* Clean Photo Frame */}
-                <div className="relative mx-auto w-64 h-64 sm:w-72 sm:h-72 rounded-full p-2.5 bg-gradient-to-tr from-amber-400 via-orange-400 to-blue-600 shadow-2xl mb-8">
-                  <div className="w-full h-full rounded-full bg-slate-900 overflow-hidden flex items-center justify-center relative">
-                    <img
-                      src="/icon.svg"
-                      alt="Vini Amaral - Fundador DEEVO Soluções Financeiras"
-                      className="w-32 h-32 object-contain opacity-85"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent flex flex-col justify-end p-4 text-center">
-                      <span className="text-white font-bold text-sm">Vini Amaral</span>
-                      <span className="text-[11px] text-blue-300">Fundador & Full Stack</span>
-                    </div>
-                  </div>
+                {/* Founder Photo matching eu-digital.png */}
+                <div className="flex justify-center mb-8">
+                  <FounderAvatar size="xl" />
                 </div>
 
                 {/* 4 Metrics Grid matching Image 1 */}

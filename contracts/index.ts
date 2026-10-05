@@ -160,6 +160,7 @@ export interface SiteSettingsDTO {
   siteUrl: string;
   contactEmail: string;
   contactPhone: string;
+  cnpj?: string;
   address: string;
   language: string;
   timezone: string;

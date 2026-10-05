@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { DeevoLogo } from '../../shared/DeevoLogo/DeevoLogo';
 
 interface PublicFooterProps {
   onNavigate: (path: string) => void;
@@ -12,21 +13,8 @@ export const PublicFooter: React.FC<PublicFooterProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Info */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center p-1.5 shadow-sm">
-                <svg viewBox="0 0 100 100" fill="none" className="w-full h-full">
-                  <polygon points="50,8 88,30 88,70 50,92 12,70 12,30" fill="#FFFFFF" opacity="0.9" />
-                  <path d="M50 16 L80 34 L50 52 L20 34 Z" fill="#0B5FFF" />
-                  <path d="M20 38 L50 56 L50 84 L20 66 Z" fill="#043299" />
-                  <path d="M80 38 L80 66 L50 84 L50 56 Z" fill="#00A3FF" />
-                </svg>
-              </div>
-              <div>
-                <span className="font-extrabold text-xl tracking-tight text-white">DEEVO</span>
-                <span className="text-[10px] uppercase font-bold tracking-widest text-blue-400 block -mt-1">
-                  Soluções Financeiras
-                </span>
-              </div>
+            <div className="mb-4">
+              <DeevoLogo variant="white" size="md" showSlogan={true} />
             </div>
             <p className="text-sm text-slate-400 leading-relaxed mb-6">
               Transformando ideias em soluções digitais reais. Desenvolvimento de software moderno,
@@ -52,7 +40,7 @@ export const PublicFooter: React.FC<PublicFooterProps> = ({ onNavigate }) => {
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
-                href="mailto:contato@deevo.com.br"
+                href="mailto:contato@deevofinanceiras.com.br"
                 aria-label="E-mail"
                 className="w-9 h-9 rounded-xl bg-slate-800 hover:bg-blue-600 hover:text-white flex items-center justify-center transition"
               >
@@ -126,6 +114,11 @@ export const PublicFooter: React.FC<PublicFooterProps> = ({ onNavigate }) => {
                 </button>
               </li>
               <li>
+                <button onClick={() => onNavigate('/media-kit')} className="hover:text-white transition font-semibold text-blue-400">
+                  Media Kit & Marca
+                </button>
+              </li>
+              <li>
                 <button onClick={() => onNavigate('/blog')} className="hover:text-white transition">
                   Blog & Artigos Técnicos
                 </button>
@@ -145,11 +138,15 @@ export const PublicFooter: React.FC<PublicFooterProps> = ({ onNavigate }) => {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-blue-400 shrink-0" />
-                <span>contato@deevo.com.br</span>
+                <a href="mailto:contato@deevofinanceiras.com.br" className="hover:text-white transition">
+                  contato@deevofinanceiras.com.br
+                </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-blue-400 shrink-0" />
-                <span>+55 (11) 99999-9999</span>
+                <a href="tel:+555137866302" className="hover:text-white transition">
+                  (51) 3786-6302
+                </a>
               </li>
             </ul>
             <div className="mt-6">
@@ -165,7 +162,7 @@ export const PublicFooter: React.FC<PublicFooterProps> = ({ onNavigate }) => {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© 2026 DEEVO Soluções Financeiras & NoteAgents. Todos os direitos reservados.</p>
+          <p>© 2026 DEEVO Soluções Financeiras LTDA — CNPJ: 63.187.175/0001-70. Todos os direitos reservados.</p>
           <div className="flex items-center gap-6">
             <button onClick={() => onNavigate('/privacidade')} className="hover:text-slate-300 transition">
               Política de Privacidade

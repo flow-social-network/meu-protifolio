@@ -3,6 +3,8 @@ import { Eye, EyeOff, Lock, Mail, ShieldCheck, ArrowRight } from 'lucide-react';
 import { useAuth } from '../../../context/AuthContext';
 import { usePageSEO } from '../../../context/SiteContext';
 import { useToast } from '../../../context/ToastContext';
+import { DeevoLogo } from '../../../components/shared/DeevoLogo/DeevoLogo';
+import { FounderAvatar } from '../../../components/shared/FounderAvatar/FounderAvatar';
 
 interface LoginProps {
   onNavigate: (path: string) => void;
@@ -18,7 +20,7 @@ export const Login: React.FC<LoginProps> = ({ onNavigate }) => {
     isPrivate: true
   });
 
-  const [email, setEmail] = useState('vini@deevo.com.br');
+  const [email, setEmail] = useState('contato@deevofinanceiras.com.br');
   const [password, setPassword] = useState('admin123');
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(true);
@@ -50,16 +52,8 @@ export const Login: React.FC<LoginProps> = ({ onNavigate }) => {
         <div className="md:col-span-7 p-8 sm:p-12 flex flex-col justify-between">
           <div>
             {/* Logo */}
-            <div className="flex items-center gap-2.5 mb-8">
-              <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center p-1.5 shadow-sm">
-                <svg viewBox="0 0 100 100" fill="none" className="w-full h-full">
-                  <polygon points="50,8 88,30 88,70 50,92 12,70 12,30" fill="#FFFFFF" opacity="0.9" />
-                  <path d="M50 16 L80 34 L50 52 L20 34 Z" fill="#0B5FFF" />
-                  <path d="M20 38 L50 56 L50 84 L20 66 Z" fill="#043299" />
-                  <path d="M80 38 L80 66 L50 84 L50 56 Z" fill="#00A3FF" />
-                </svg>
-              </div>
-              <span className="font-extrabold text-xl tracking-tight text-slate-900">DEEVO</span>
+            <div className="mb-8">
+              <DeevoLogo variant="horizontal" size="md" />
             </div>
 
             <h1 className="text-2xl font-black text-slate-900 tracking-tight">Acesse seu painel</h1>
@@ -134,6 +128,14 @@ export const Login: React.FC<LoginProps> = ({ onNavigate }) => {
                 {isLoading ? 'Autenticando...' : 'Entrar no Painel'}
                 <ArrowRight className="w-4 h-4" />
               </button>
+
+              <div className="p-3 rounded-xl bg-blue-50/70 border border-blue-100 text-[11px] text-slate-600 space-y-1">
+                <span className="font-bold text-blue-700 block">Credenciais de Administrador:</span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 font-mono text-[10px]">
+                  <span>E-mail: <strong>contato@deevofinanceiras.com.br</strong></span>
+                  <span>Senha: <strong>admin123</strong></span>
+                </div>
+              </div>
             </form>
           </div>
 
@@ -151,11 +153,9 @@ export const Login: React.FC<LoginProps> = ({ onNavigate }) => {
             </span>
           </div>
 
-          <div className="relative z-10 text-center my-8">
-            <div className="w-40 h-40 rounded-full mx-auto p-1.5 bg-gradient-to-tr from-amber-400 to-cyan-400 shadow-xl mb-4">
-              <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
-                <img src="/icon.svg" alt="Vini Amaral" className="w-20 h-20 object-contain opacity-80" />
-              </div>
+          <div className="relative z-10 text-center my-8 flex flex-col items-center">
+            <div className="mb-4">
+              <FounderAvatar size="lg" />
             </div>
             <p className="text-sm italic font-medium text-blue-100 max-w-xs mx-auto leading-relaxed">
               “Tecnologia para transformar ideias em resultados reais.”
