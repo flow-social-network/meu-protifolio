@@ -1,0 +1,30 @@
+# Robots.txt for NoteAgents / DEEVO CMS
+User-agent: *
+Allow: /
+Allow: /sobre
+Allow: /recursos
+Allow: /solucoes
+Allow: /projetos
+Allow: /blog
+Allow: /comunidade
+Allow: /open-source
+Allow: /desenvolvedores
+Allow: /documentacao
+Allow: /contato
+Allow: /atendimento
+Allow: /privacidade
+Allow: /termos
+Allow: /cookies
+
+# Disallow private and administrative areas
+Disallow: /admin/
+Disallow: /admin
+Disallow: /auth/
+Disallow: /auth
+Disallow: /dashboard/
+Disallow: /dashboard
+Disallow: /workspace/
+Disallow: /painel/
+Disallow: /api/
+
+Sitemap: /sitemap.xml

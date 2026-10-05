@@ -1,0 +1,226 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_1",
+      "name": "Vini Amaral",
+      "email": "vini@deevo.com.br",
+      "role": "ADMIN",
+      "avatarUrl": "/icon.svg",
+      "createdAt": "2026-10-05T17:34:29.120Z",
+      "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
+    }
+  ],
+  "pages": [
+    {
+      "id": "page_1791221683465",
+      "title": "Página Inicial",
+      "slug": "home-deevo",
+      "content": "<h2>Soluções financeiras que transformam seus planos em realidade.</h2><p>Crédito, consignado, seguros e muito mais com segurança e atendimento personalizado.</p>",
+      "excerpt": "",
+      "status": "PUBLISHED",
+      "seoTitle": "Página Inicial",
+      "featuredImage": "",
+      "createdAt": "2026-10-05T17:34:43.465Z",
+      "updatedAt": "2026-10-05T17:34:43.465Z"
+    }
+  ],
+  "pageRevisions": [
+    {
+      "id": "rev_1791221683465",
+      "pageId": "page_1791221683465",
+      "content": "<h2>Soluções financeiras que transformam seus planos em realidade.</h2><p>Crédito, consignado, seguros e muito mais com segurança e atendimento personalizado.</p>",
+      "createdAt": "2026-10-05T17:34:43.465Z"
+    }
+  ],
+  "posts": [],
+  "media": [],
+  "banners": [],
+  "appointments": [
+    {
+      "id": "apt_1791221676911_smg8",
+      "type": "CLIENTE",
+      "name": "Carlos Silva",
+      "email": "carlos@empresa.com",
+      "phone": "11987654321",
+      "company": "TechCorp",
+      "reason": "Soluções Financeiras & Crédito",
+      "description": "Gostaria de entender as condições para gestão financeira.",
+      "isExistingClient": false,
+      "preferredChannel": "GOOGLE_MEET",
+      "date": "2026-10-15",
+      "time": "15:00",
+      "status": "SCHEDULED",
+      "createdAt": "2026-10-05T17:34:36.911Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_noteagents",
+      "name": "NoteAgents",
+      "slug": "noteagents",
+      "tagline": "AI Engineering Control Plane",
+      "description": "Plataforma open source de engenharia de software assistida por IA. Coordena projetos, agentes, código, testes, auditoria, observabilidade e deployment.",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "IA",
+        "Open Source"
+      ],
+      "category": "AI",
+      "repositoryUrl": "https://github.com/deevo-solucoes/noteagents",
+      "demoUrl": "https://noteagents.deevo.com.br",
+      "featured": true,
+      "createdAt": "2026-10-05T17:34:29.120Z"
+    },
+    {
+      "id": "proj_deevo",
+      "name": "DEEVO Soluções Financeiras",
+      "slug": "deevo-financeiro",
+      "tagline": "Sistemas Financeiros e Gestão",
+      "description": "Soluções completas para gestão financeira, automação de processos e inteligência de dados.",
+      "technologies": [
+        "Web",
+        "Cloud",
+        "Integrações",
+        "Dashboard"
+      ],
+      "category": "FINANCE",
+      "demoUrl": "https://deevo.com.br",
+      "featured": true,
+      "createdAt": "2026-10-05T17:34:29.120Z"
+    }
+  ],
+  "integrations": [
+    {
+      "id": "int_whatsapp",
+      "provider": "whatsapp",
+      "name": "WhatsApp Business API",
+      "description": "Notificações e atendimento direto via WhatsApp.",
+      "connected": false,
+      "config": {},
+      "updatedAt": "2026-10-05T17:34:29.120Z"
+    },
+    {
+      "id": "int_email",
+      "provider": "email_smtp",
+      "name": "E-mail Transacional (SMTP)",
+      "description": "Envio de confirmações de agendamento e recuperação de senha.",
+      "connected": false,
+      "config": {},
+      "updatedAt": "2026-10-05T17:34:29.120Z"
+    },
+    {
+      "id": "int_ga",
+      "provider": "google_analytics",
+      "name": "Google Analytics 4",
+      "description": "Métricas de tráfego e visualizações de páginas.",
+      "connected": false,
+      "config": {},
+      "updatedAt": "2026-10-05T17:34:29.120Z"
+    },
+    {
+      "id": "int_github",
+      "provider": "github",
+      "name": "GitHub Sync",
+      "description": "Sincronização de repositórios, releases e deploys.",
+      "connected": false,
+      "config": {},
+      "updatedAt": "2026-10-05T17:34:29.120Z"
+    },
+    {
+      "id": "int_vercel",
+      "provider": "vercel",
+      "name": "Vercel Deployment Platform",
+      "description": "Monitoramento de deploys e publicação contínua.",
+      "connected": false,
+      "config": {},
+      "updatedAt": "2026-10-05T17:34:29.120Z"
+    }
+  ],
+  "seoSettings": {
+    "siteTitle": "NoteAgents — Engenharia de Software Assistida por IA",
+    "siteDescription": "Plataforma open source de engenharia de software assistida por IA. Coordena projetos, agentes de IA, código, testes, auditoria, observabilidade e deployment.",
+    "keywords": [
+      "NoteAgents",
+      "IA",
+      "Engenharia de Software",
+      "DEEVO",
+      "Open Source",
+      "Agentes"
+    ],
+    "canonicalBaseUrl": "https://deevo.com.br",
+    "ogTitle": "NoteAgents — Engenharia de Software Assistida por IA",
+    "ogDescription": "Plataforma open source de engenharia de software assistida por IA.",
+    "ogImage": "/icon.svg",
+    "indexingEnabled": true,
+    "autoSitemap": true
+  },
+  "siteSettings": {
+    "siteName": "DEEVO Soluções Financeiras & NoteAgents",
+    "tagline": "Transformando ideias em soluções digitais reais.",
+    "siteUrl": "https://deevo.com.br",
+    "contactEmail": "vini@deevo.com.br",
+    "contactPhone": "+55 (11) 99999-9999",
+    "address": "Brasil",
+    "language": "pt-BR",
+    "timezone": "America/Sao_Paulo (GMT-3)",
+    "githubUrl": "https://github.com/deevo-solucoes",
+    "linkedinUrl": "https://linkedin.com/in/viniamaral",
+    "whatsappNumber": "5511999999999"
+  },
+  "auditLogs": [
+    {
+      "id": "aud_1791221683465_aii1y",
+      "action": "PAGE_CREATED",
+      "resource": "PAGE",
+      "details": "Página criada: \"Página Inicial\" (home-deevo)",
+      "userId": "usr_admin_1",
+      "userName": "Vini Amaral",
+      "ip": "127.0.0.1",
+      "timestamp": "2026-10-05T17:34:43.465Z"
+    },
+    {
+      "id": "aud_1791221676912_i912h",
+      "action": "APPOINTMENT_CREATED",
+      "resource": "APPOINTMENT",
+      "details": "Novo agendamento recebido de Carlos Silva (carlos@empresa.com) para 2026-10-15 às 15:00",
+      "userName": "Carlos Silva",
+      "ip": "127.0.0.1",
+      "timestamp": "2026-10-05T17:34:36.912Z"
+    },
+    {
+      "id": "aud_1791221673593_74tjt",
+      "action": "AUTH_SUCCESS",
+      "resource": "USER",
+      "details": "Login realizado com sucesso por Vini Amaral",
+      "userId": "usr_admin_1",
+      "userName": "Vini Amaral",
+      "ip": "127.0.0.1",
+      "timestamp": "2026-10-05T17:34:33.593Z"
+    },
+    {
+      "id": "aud_init",
+      "action": "SYSTEM_BOOT",
+      "resource": "SYSTEM",
+      "ip": "127.0.0.1",
+      "details": "Sistema NoteAgents iniciado e arquitetura de banco provisionada.",
+      "timestamp": "2026-10-05T17:34:29.120Z"
+    }
+  ],
+  "systemLogs": [
+    {
+      "id": "log_1791221676912_qzbll",
+      "level": "info",
+      "service": "APPOINTMENTS",
+      "message": "Agendamento #apt_1791221676911_smg8 criado com sucesso.",
+      "timestamp": "2026-10-05T17:34:36.912Z"
+    },
+    {
+      "id": "log_boot",
+      "level": "info",
+      "service": "API_GATEWAY",
+      "message": "Servidor REST inicializado na porta 3000.",
+      "timestamp": "2026-10-05T17:34:29.120Z"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="deevoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A3FF" />
+      <stop offset="100%" stop-color="#0B5FFF" />
+    </linearGradient>
+    <linearGradient id="deevoDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B5FFF" />
+      <stop offset="100%" stop-color="#043299" />
+    </linearGradient>
+  </defs>
+  <!-- Modern Geometric Diamond / Delta Brand Mark -->
+  <polygon points="50,8 88,30 88,70 50,92 12,70 12,30" fill="#F0F6FF" stroke="#0B5FFF" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M50 16 L80 34 L50 52 L20 34 Z" fill="url(#deevoGrad)" />
+  <path d="M20 38 L50 56 L50 84 L20 66 Z" fill="url(#deevoDark)" />
+  <path d="M80 38 L80 66 L50 84 L50 56 Z" fill="#00A3FF" />
+</svg>

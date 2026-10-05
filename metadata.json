@@ -1,0 +1,6 @@
+{
+  "name": "NoteAgents - AI Engineering Control Plane & CMS",
+  "description": "Plataforma de engenharia de software assistida por IA e sistema CMS profissional para gerenciamento de conteúdo, projetos, agendamentos e integrações.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
